@@ -17,7 +17,16 @@ ts-minimal-kit/
 
 ## How to Use This Kit
 
-### 🎯 Method 1: GitHub Template (Recommended)
+### ⚡ Method 1: [CLI Installer](https://www.npmjs.com/package/ts-minimal-kit-cli) (Recommended)
+
+```bash
+npm install -g ts-minimal-kit-cli
+ts-minimal-kit my-project
+```
+
+_Automatically clones template, removes git history, initializes new repository, installs dependencies._
+
+### 🎯 Method 2: GitHub Template
 
 1. Click the **"Use this template"** button on the [repository page](https://github.com/k1de/ts-minimal-kit)
 2. Create a new repository based on the kit
@@ -27,16 +36,14 @@ ts-minimal-kit/
     cd your-project
     ```
 
-### 📦 Method 2: degit (recommended for quick setup)
+### 📦 Method 3: degit
 
 ```bash
 npx degit k1de/ts-minimal-kit my-project
 cd my-project
 ```
 
-_If degit fails, use Method 3 (Git clone) as fallback._
-
-### 🔄 Method 3: Git clone + Initialize new repository
+### 🔄 Method 4: Git clone + Initialize new repository
 
 ```bash
 git clone https://github.com/k1de/ts-minimal-kit.git my-project
@@ -45,7 +52,7 @@ npm run degit    # Remove git history
 git init         # Initialize new repository
 ```
 
-### 📥 Method 4: Download ZIP
+### 📥 Method 5: Download ZIP
 
 1. Download ZIP archive from [GitHub](https://github.com/k1de/ts-minimal-kit/archive/refs/heads/main.zip)
 2. Extract to desired folder
@@ -55,7 +62,11 @@ git init         # Initialize new repository
 
 **Setup:**
 
--   **Install dependencies:** `npm install`
+-   **Install dependencies:**
+
+```bash
+npm install
+```
 
 **Development:**
 
