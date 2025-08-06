@@ -2,24 +2,26 @@
     "name": "ts-minimal-kit",
     "version": "0.0.1",
     "description": "",
+    "type": "module",
     "main": "./dist/app.js",
     "scripts": {
         "dev": "tsc --watch",
         "build": "tsc --build",
         "start": "node ./dist/app.js",
         "build:start": "npm run build && npm run start",
-        "clean": "node -e \"require('fs').rmSync('dist', {recursive: true, force: true}); require('fs').rmSync('tsconfig.tsbuildinfo', {force: true})\"",
-        "degit": "node -e \"require('fs').rmSync('.git', {recursive: true, force: true})\"",
+        "clean": "node -e \"import('fs').then(fs => { fs.rmSync('dist', {recursive: true, force: true}); fs.rmSync('tsconfig.tsbuildinfo', {force: true}); })\"",
+        "degit": "node -e \"import('fs').then(fs => fs.rmSync('.git', {recursive: true, force: true}))\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
         "typescript",
-        "minimal"
+        "minimal",
+        "esm"
     ],
     "author": "",
     "license": "ISC",
-    "type": "commonjs",
     "devDependencies": {
-        "typescript": "*"
+        "typescript": "*",
+        "@types/node": "*"
     }
 }

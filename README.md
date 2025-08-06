@@ -85,7 +85,7 @@ npm install
 **Recommendation:** Update TypeScript to the latest version:
 
 ```bash
-npm install typescript@latest -D
+npm install -D typescript@latest @types/node@latest
 ```
 
 This will install the current stable version of TypeScript in your project and write it to package.json.

@@ -6,13 +6,15 @@
         "outDir": "./dist",
 
         // Environment Settings
-        "module": "commonjs",
+        "module": "esnext",
         "target": "esnext",
-        // "lib": [],
+        "lib": ["ESNext"],
+        "types": ["node"],
 
-        // For Node.js projects uncomment:
-        // "types": ["node"],
-        // and npm install -D @types/node
+        // Module Resolution
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
 
         // Other Outputs
         "sourceMap": true,
@@ -23,13 +25,12 @@
         "noUncheckedIndexedAccess": true,
         "exactOptionalPropertyTypes": true,
 
-        // Style Options (uncomment as needed)
-        // "noImplicitReturns": true,
-        // "noImplicitOverride": true,
-        // "noUnusedLocals": true,
-        // "noUnusedParameters": true,
-        // "noFallthroughCasesInSwitch": true,
-        // "noPropertyAccessFromIndexSignature": true,
+        // Style Options (рекомендуется включить)
+        "noImplicitReturns": true,
+        "noImplicitOverride": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
 
         // Recommended Options
         "strict": true,
@@ -37,9 +38,11 @@
         "isolatedModules": true,
         "moduleDetection": "force",
         "skipLibCheck": true,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+
+        // Modern additions
+        "useDefineForClassFields": true,
+        "resolveJsonModule": true
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "dist"]
