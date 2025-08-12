@@ -5,8 +5,8 @@
     "type": "module",
     "main": "./dist/app.js",
     "scripts": {
-        "dev": "tsc --watch",
-        "build": "tsc --build",
+        "dev": "npx tsc --watch",
+        "build": "npx tsc --build",
         "start": "node ./dist/app.js",
         "build:start": "npm run build && npm run start",
         "clean": "node -e \"import('fs').then(fs => { fs.rmSync('dist', {recursive: true, force: true}); fs.rmSync('tsconfig.tsbuildinfo', {force: true}); })\"",
