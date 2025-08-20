@@ -25,7 +25,7 @@
         "noUncheckedIndexedAccess": true,
         "exactOptionalPropertyTypes": true,
 
-        // Style Options (рекомендуется включить)
+        // Style Options
         "noImplicitReturns": true,
         "noImplicitOverride": true,
         "noUnusedLocals": true,
