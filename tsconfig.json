@@ -6,13 +6,13 @@
         "outDir": "./dist",
 
         // Environment Settings
-        "module": "esnext",
+        "module": "nodenext",
         "target": "esnext",
         "lib": ["ESNext"],
         "types": ["node"],
 
         // Module Resolution
-        "moduleResolution": "node",
+        "moduleResolution": "nodenext",
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
 
