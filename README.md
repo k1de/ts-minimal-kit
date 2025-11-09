@@ -7,12 +7,14 @@ Minimal TypeScript kit: strict typing, clean setup, ready to code.
 ```
 ts-minimal-kit/
 ├── src/
-│   └── app.ts         # Main application file
-├── dist/              # Compiled files (created automatically)
-├── .gitignore         # Ignored files
-├── package.json       # Project settings and dependencies
-├── tsconfig.json      # TypeScript configuration
-└── README.md          # This file
+│   └── app.ts              # Main application file
+├── dist/                   # Compiled files (created automatically)
+├── .gitignore              # Git ignored files
+├── .npmignore              # npm ignored files
+├── .prettierrc             # Prettier configuration
+├── package.json            # Project settings and dependencies
+├── tsconfig.json           # TypeScript configuration
+└── README.md               # This file
 ```
 
 ## How to Use This Kit
